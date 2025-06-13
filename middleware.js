@@ -1,9 +1,8 @@
-import { i18nRouter } from 'next-i18n-router'
-import i18nConfig from './i18nConfig'
-
-export function middleware(request) {
-  return i18nRouter(request, i18nConfig)
-}
+import createMiddleware from 'next-intl/middleware';
+import {routing} from './i18n/routing';
+ 
+export default createMiddleware(routing);
+ 
 export const config = {
-  matcher: '/((?!api|static|.*\\..*|_next).*)'
-}
+  matcher: '/((?!api|trpc|_next|_vercel|.*\\..*).*)'
+};
