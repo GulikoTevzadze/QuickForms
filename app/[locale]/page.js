@@ -1,6 +1,8 @@
 'use client';
 
+import { Button } from '@/components/ui/button';
 import { useTranslations } from 'next-intl';
+
 
 
 export default function Home() {
@@ -8,8 +10,7 @@ export default function Home() {
 
   return (
     <>
-      <h1>{t('title')}</h1>
-
+      <Button>{t('title')}</Button>
 
     </>
   );
