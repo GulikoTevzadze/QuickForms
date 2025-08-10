@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
-import { toast } from "sonner";
+import { toast } from 'sonner'
 
 export default function SignUpForm() {
   const [isLoading, setIsLoading] = useState(false);
@@ -49,7 +49,7 @@ export default function SignUpForm() {
   return (
     <form
       onSubmit={handleSubmit(onHandlerSubmiT)}
-      className="w-[60%] mx-auto flex justify-center items-center flex-col"
+      className="w-[60%] mx-auto flex justify-center items-center flex-col mt-4.5"
     >
       <div className="w-full flex justify-between items-center gap-3">
         <div className="w-full mb-2.5 flex flex-col gap-1.5">
